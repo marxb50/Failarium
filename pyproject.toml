@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "failarium"
+version = "0.1.0"
+description = "Portable, deterministic reproduction cases for AI agent failures."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Marx Bruno" }
+]
+keywords = [
+  "ai-agents",
+  "debugging",
+  "deterministic-replay",
+  "developer-tools",
+  "reproducibility"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Debuggers",
+  "Topic :: Software Development :: Testing"
+]
+dependencies = []
+
+[project.scripts]
+failarium = "failarium.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/marxb50/Failarium"
+Repository = "https://github.com/marxb50/Failarium"
+Issues = "https://github.com/marxb50/Failarium/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
