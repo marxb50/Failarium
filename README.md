@@ -1,3 +1,5 @@
+![Failarium Preview](docs/preview.png)
+
 # Failarium
 
 [![CI](https://github.com/marxb50/Failarium/actions/workflows/ci.yml/badge.svg)](https://github.com/marxb50/Failarium/actions/workflows/ci.yml)
